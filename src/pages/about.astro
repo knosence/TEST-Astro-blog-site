@@ -1,0 +1,37 @@
+---
+import { Image } from "astro:assets";
+import profilePhoto from "../assets/profile.jpg";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="About">
+  <Image
+    src={profilePhoto}
+    width={420}
+    quality="max"
+    class="rounded-full mx-auto"
+    alt="Of me NaDario"
+  />
+  <p class="pt-10">
+    Hey, I&apos;m <b>NaDario Seays</b>. I'm a highly skilled software
+    professional with hands-on experience in crafting robust, scalable
+    applications across a variety of domains. My proficiency in Java and the
+    Spring Framework enables me to build robust server-side applications, while
+    my skills in HTML, CSS, and JavaScript are key to delivering a seamless user
+    experience. When it comes to data storage, I rely on MySQL and Spring Data
+    JPA to develop reliable solutions. I am well-versed in Agile Methodology and
+    the Software Development Life Cycle (SDLC), approaches that help me meet and
+    often exceed project milestones ahead of deadlines. Collaboration is a
+    strong suit of mine. I thrive in cross-functional team environments where I
+    can leverage collective skills to bring projects to successful fruition. I'm
+    committed to continual learning, staying abreast of industry trends, and
+    sharpening my skill set. Technical Proficiencies:<br />
+    <p class="pl-4 pt-4">
+      • <b>Platforms:</b> Linux, Docker, MySQL, Nix<br />
+       • <b> Tools:</b> Git, Agile Methodology, SDLC <br />
+       • <b>Languages:</b> Java (Spring), HTML & CSS, JavaScript (Angular,
+      React/Next.js, Astro), Node.js, TypeScript, Data Structures & Algorithms
+      (DSA), bash
+    </p>
+  </p>
+</Layout>
