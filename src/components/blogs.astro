@@ -1,0 +1,21 @@
+---
+import { getCollection } from "astro:content";
+import Link from "../components/Link.astro";
+
+const posts = await getCollection("blog");
+---
+
+<ol class="mt-4 px-10 space-y-2 list-decimal">
+  {
+    posts.map((post) => (
+      <li>
+        <Link href={`/blog/${post.slug}`} class="flex justify-between">
+          {post.data.title}
+          <span class="text-gray-400">
+            {post.data.date.toUTCString().slice(0, -13)}
+          </span>
+        </Link>
+      </li>
+    ))
+  }
+</ol>

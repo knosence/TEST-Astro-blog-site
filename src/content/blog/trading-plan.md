@@ -1,9 +1,9 @@
 --- 
-title: Hello, world!
+title: Trading Plan!
 tags: ["hello", "world"]
 date: 2023-09-18
 ---
-# ---={ Trading Plan }=---
+# Trading Plan
 
 ### BOS :
 
