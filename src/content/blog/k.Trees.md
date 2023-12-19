@@ -2,6 +2,8 @@
 title: Trees
 tags: ['Data Structures', 'Foundations of the Digital Architect']
 date: 2023-12-18
+number: 11
+
 ---
 # TREES
 

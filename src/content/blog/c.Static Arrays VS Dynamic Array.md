@@ -2,6 +2,7 @@
 title: Static Arrays vs. Dynamic Arrays
 tags: ['Data Structures', 'Foundations of the Digital Architect']
 date: 2023-12-18
+number: 3
 ---
 # Static Arrays vs. Dynamic Arrays
 
