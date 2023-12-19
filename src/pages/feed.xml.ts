@@ -12,13 +12,11 @@ export async function GET(context: APIContext) {
 		title: "NaDario Seays' Blog",
 		description: "I write about programmer foundations!",
 		site: context.site?.toString() || "https://replaceme.com",
-		items: blog.map((post) => {
-			return {
-				title: post.data.title,
-				pubDate: post.data.date,
-				link: `/blog/${post.slug}`,
-				content: sanitizeHtml(parser.render(post.body)),
-			};
-		}),
+		items: blog.map((post) => ({
+			title: post.data.title,
+			pubDate: post.data.date,
+			link: `/blog/${post.slug}`,
+			content: sanitizeHtml(parser.render(post.body)),
+		})),
 	});
 }
