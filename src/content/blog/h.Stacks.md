@@ -2,7 +2,6 @@
 title: Stacks
 tags: ['Data Structures', 'Foundations of the Digital Architect']
 date: 2023-12-18
-number: 8
 ---
 # STACKS
 
