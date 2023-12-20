@@ -62,13 +62,13 @@ This is a test to check out Astro.Build. The site will go over:
 - RSS feed Generation 
 - Vercel Deployment
 - Astro Islands Architecture with React
-    step 1: npx astro add react
-    step 2: Create react file in components
-    step 3: import file into page using
+    - step 1: npx astro add react
+    - step 2: Create react file in components
+    - step 3: import file into page using
     ``` tsx
       import PostLike from "../../components/PostLike";
     ```
-    step 4 use as a regular tag. Use the `client:` with `visible, idle, only or load`  
+    - step 4 use as a regular tag. Use the `client:` with `visible, idle, only or load`  
     ``` tsx
       <Layout seo={{ title: post.data.title }}>
         <article class="prose lg:prose-xl">
