@@ -50,18 +50,18 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
 This is a test to check out Astro.Build. The site will go over:
-- Styling 
-- pages
-- shared layouts
-- static images 
-- Blog content collection
-- Render an Article page 
-- Blog index + page 
-- SEO 
-- Sitemap Generation
-- RSS feed Generation 
-- Vercel Deployment
-- Astro Islands Architecture with React
+## Styling 
+## pages
+## shared layouts
+## static images 
+## Blog content collection
+## Render an Article page 
+## Blog index + page 
+## SEO 
+## Sitemap Generation
+## RSS feed Generation 
+## Vercel Deployment
+## Astro Islands Architecture with React
     - step 1: npx astro add react
     - step 2: Create react file in components
     - step 3: import file into page using
@@ -77,10 +77,10 @@ This is a test to check out Astro.Build. The site will go over:
         </article>
       </Layout>
     ```
-  - refactoring to plain JS 
-- starting fly.io account 
-- Dockerize application
-- Github action for CIDI
-- Use Drizzle ORM 
-- API Endpoints
-- Dynamic OG image gen 
+### refactoring to plain JS 
+## starting fly.io account 
+## Dockerize application
+## Github action for CIDI
+## Use Drizzle ORM 
+## API Endpoints
+## Dynamic OG image gen 
