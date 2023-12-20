@@ -61,7 +61,8 @@ This is a test to check out Astro.Build. The site will go over:
 ## Sitemap Generation
 ## RSS feed Generation 
 ## Vercel Deployment
-## Astro Islands Architecture with React
+## Astro Islands Architecture 
+###   with React
 - step 1: npx astro add react
 - step 2: Create react file in components
 - step 3: import file into page using
@@ -77,7 +78,7 @@ This is a test to check out Astro.Build. The site will go over:
     </article>
   </Layout>
 ```
-### refactoring to plain JS 
+###   refactoring to plain JS 
 ## starting fly.io account 
 ## Dockerize application
 ## Github action for CIDI
