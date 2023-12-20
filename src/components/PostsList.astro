@@ -10,7 +10,7 @@ export type Props = {
 const { posts, start = 1 } = Astro.props;
 ---
 
-<ol class="mt-4 px-10 space-y-2 list-decimal h-40" start={start}>
+<ol class="mt-4 px-10 space-y-2 list-decimal" start={start}>
   {
     posts.map((post) => (
       <li>

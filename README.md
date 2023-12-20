@@ -69,7 +69,7 @@ This is a test to check out Astro.Build. The site will go over:
 ``` tsx
   import PostLike from "../../components/PostLike";
 ```
-- step 4 use as a regular tag. Use the `client:` with `visible, idle, only or load`  
+- step 4 use as a regular tag. Use the `client:` with `visible, idle, only, media or load`  
 ``` tsx
   <Layout seo={{ title: post.data.title }}>
     <article class="prose lg:prose-xl">
@@ -80,7 +80,43 @@ This is a test to check out Astro.Build. The site will go over:
 ```
 ###  - refactoring to plain JS 
 ## + starting fly.io account 
+- step 1: create fly.io account 
+- step 2: log into account and install fly.io in terminal
+- step 3: input cc into fly.io to connect
+``` sh
+  curl -L https://fly.io/install.sh | sh
+  ~/.fly/bin/flyctl auth login
+  ~/.fly/bin/flyctl launch
+```
 ## + Dockerize application
+- Step 1: add node
+``` sh
+npx astro add node
+```
+- Step 2: Change astro.config.mjs>>defineConfig>>output: "server" to "hybrid"
+- Step 3: rebuild application
+```sh 
+npm run build 
+```
+- Step 4: delete all in dockerfile and write:
+```dockerfile
+from node:lts-alpine as runtime
+workdir /app 
+
+copy . .
+
+run npm install
+run npm run build 
+
+env HOST=0.0.0.0
+env PORT=4321
+env MODE=production 
+
+expose 4321
+
+cmd npm run start 
+
+```
 ## + Github action for CIDI
 ## + Use Drizzle ORM 
 ## + API Endpoints
