@@ -22,7 +22,6 @@
     "better-sqlite3": "^9.2.2",
     "drizzle-orm": "^0.29.3",
     "markdown-it": "^14.0.0",
-    "node": "^21.2.0",
     "prettier": "^3.1.1",
     "prettier-plugin-astro": "^0.12.2",
     "sanitize-html": "^2.11.0",
