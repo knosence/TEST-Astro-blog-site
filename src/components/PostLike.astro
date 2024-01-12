@@ -30,8 +30,23 @@ const { slug } = Astro.props;
       .then((data) => {
         if (!!numberOfLikes) numberOfLikes.innerText = data.likes;
       })
-      .catch((err) => {
+      .catch(() => {
         alert("Couldn't like the post.");
       });
   };
+
+  function refreshLikes(){
+    fetch(`/api/likees/${slug}`, )
+      .then((res) => res.json())
+      .then((data) => {
+        if (!!numberOfLikes) numberOfLikes.innerText = data.likes;
+      })
+      .catch(() => {
+        if(!!numberOfLikes) {
+          numberOfLikes.innerText = '0';
+        }
+      });
+  }
+
+  refreshLikes();
 </script>
