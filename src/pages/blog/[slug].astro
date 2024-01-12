@@ -21,7 +21,9 @@ const post: CollectionEntry<"blog"> = Astro.props.post;
 const { Content } = await post.render();
 ---
 
-<Layout seo={{ title: post.data.title }}>
+<Layout 
+  ogImage={{template: 'blog', data: {title: post.data.title}}}
+  seo={{ title: post.data.title }}>
   <article class="prose lg:prose-xl">
     <Content />
     <PostLike slug={post.slug} />

@@ -25,7 +25,7 @@ const { slug } = Astro.props;
   likeButton?.addEventListener("click", () => hitLike());
 
   const hitLike = () => {
-    fetch(`/api/likees/${slug}`, { method: "POST" })
+    fetch(`/api/likes/${slug}`, { method: "POST" })
       .then((res) => res.json())
       .then((data) => {
         if (!!numberOfLikes) numberOfLikes.innerText = data.likes;
@@ -36,7 +36,7 @@ const { slug } = Astro.props;
   };
 
   function refreshLikes(){
-    fetch(`/api/likees/${slug}`, )
+    fetch(`/api/likes/${slug}`, )
       .then((res) => res.json())
       .then((data) => {
         if (!!numberOfLikes) numberOfLikes.innerText = data.likes;
