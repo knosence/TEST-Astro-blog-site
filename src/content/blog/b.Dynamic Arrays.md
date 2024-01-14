@@ -32,7 +32,7 @@ An Dynamic Arrays  is a array-like data structure that allows flexible resizing 
 - Poor Performance for Large Data Sets: If the Dynamic Arrays  exceeds its internal capacity, resizing operations can become costly and impact performance, especially for large data sets.
 - Not Sorted by Default: Dynamic Arrays s do not provide inherent sorting capabilities. If you require sorted data, you need to manually sort the elements or consider using other data structures.
 
-## HOW TO IMPLEMENT AN Dynamic Arrays  h-10000
+## HOW TO IMPLEMENT AN Dynamic Arrays
 
 1. Define the Dynamic Arrays  Blueprint: 
 	- Declare a private array to store the elements. The array will have a generic type to allow for storing elements of any type.
