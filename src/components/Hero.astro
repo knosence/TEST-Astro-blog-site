@@ -2,7 +2,7 @@
 import Link from "./Link.astro";
 import {Image} from 'astro:assets';
 
-import heroImage from '../../public/Hero.png';
+import heroImage from '../assets/Hero.png';
 
 ---
 
@@ -19,7 +19,8 @@ import heroImage from '../../public/Hero.png';
       src={heroImage}
       alt="Computer monitors with code on them"
       loading="lazy"
-      class="bg-cover"
+      height="900"
+      class="bg-cover w-full"
     />
     <div
       class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.75)] bg-fixed">
