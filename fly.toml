@@ -1,12 +1,17 @@
-# fly.toml app configuration file generated for astro-blog-test on 2023-12-19T20:38:01-05:00
+# fly.toml app configuration file generated for nadario-seays on 2024-01-14T17:54:23-05:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "NaDarioSeaysBlog"
+app = "nadario-seays"
 primary_region = "atl"
 
 [build]
+
+[[mounts]]
+  source = "db"
+  destination = "/mnt/db"
+  auto_extend_size_threshold = 0
 
 [http_service]
   internal_port = 4321
@@ -16,7 +21,7 @@ primary_region = "atl"
   min_machines_running = 0
   processes = ["app"]
 
-
-[mounts]
-  source="db"
-  destination="/mnt/db"
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 1
+  memory_mb = 1024

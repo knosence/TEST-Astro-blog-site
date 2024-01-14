@@ -1,16 +1,26 @@
----import Link from "./Link.astro";
+---
+import Link from "./Link.astro";
+import {Image} from 'astro:assets';
 
+import heroImage from '../../public/Hero.png';
 
 ---
 
 <section class="mb-10">
-  <!-- Jumbotron -->
-  <div class="relative overflow-hidden bg-cover bg-no-repeat" style="
-        background-position: 50%;
-        background-image: url(../../public/Hero.png);
-        height: 600px;
-        width: 100%;
-      ">
+
+  <div class="relative overflow-hidden">
+    <!-- class="relative overflow-hidden bg-cover bg-no-repeat" style=" -->
+        <!-- background-position: 50%; -->
+        <!-- background-image: url(../../public/Hero.png); -->
+        <!-- height: 600px; -->
+        <!-- width: 100%; -->
+        <!-- "> -->
+    <Image 
+      src={heroImage}
+      alt="Computer monitors with code on them"
+      loading="lazy"
+      class="bg-cover"
+    />
     <div
       class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.75)] bg-fixed">
       <div class="flex h-full items-center justify-center">
@@ -28,5 +38,4 @@
       </div>
     </div>
   </div>
-  <!-- Jumbotron -->
 </section>
