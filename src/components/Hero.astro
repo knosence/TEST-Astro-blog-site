@@ -2,25 +2,24 @@
 import Link from "./Link.astro";
 import {Image} from 'astro:assets';
 
-import heroImage from '../assets/Hero.png';
+import heroImage from '../../public/Hero.png';
 
 ---
 
 <section class="mb-10">
 
-  <div 
+  <div
     class="relative overflow-hidden bg-cover bg-no-repeat" style="
         background-position: 50%;
-        background-image: url(../assets/Hero.png);
+        background-image: url(@../../public/Hero.png);
         height: 600px;
         width: 100%;
         ">
     <!-- <Image  -->
-      <!-- src={heroImage} -->
-      <!-- alt="Computer monitors with code on them" -->
-      <!-- loading="lazy" -->
-      <!-- height="900" -->
-      <!-- class="bg-cover min-h-full" -->
+    <!--   src={heroImage} -->
+    <!--   alt="Computer monitors with code on them" -->
+    <!--   height="600" -->
+    <!--   width="1250" -->
     <!-- /> -->
     <div
       class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.75)] bg-fixed">
