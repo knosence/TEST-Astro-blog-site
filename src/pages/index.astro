@@ -12,8 +12,8 @@ const posts = await getCollection("blog");
 
     <Hero />
     <div class="flex flex-col">
-      <h2 class="text-2xl font-semibold">Blog posts</h2>
-      <PostsList posts={posts.slice(0, 3)} />
+      <h2 class="text-2xl font-semibold">Last 3 Blog Posts</h2>
+      <PostsList posts={posts.slice(-3)} />
     </div>
   </div>
 </Layout>

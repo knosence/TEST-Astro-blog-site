@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import profilePhoto from "../assets/profile.jpg";
+import profilePhoto from "../images/profile.jpg";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -8,9 +8,9 @@ import Layout from "../layouts/Layout.astro";
   <div class="flex flex-col items-center gap-8 mx-auto mt-12">
     <Image
       src={profilePhoto}
-      width={512}
+      height={500}
       quality="max"
-      class="rounded-full w-64"
+      class="rounded-full"
       alt="Of me NaDario"
     />
     <p class="mt-2 flex-1 leading-7">
